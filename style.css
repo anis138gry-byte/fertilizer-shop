@@ -4,367 +4,19 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Tahoma, Arial, sans-serif;
-    background-color: #f4f8f2;
+    direction: rtl;
+    background: #f3f8f1;
     color: #263326;
     line-height: 1.8;
 }
 
 
-/* Navbar */
+/* Header */
 
 header {
-    background-color: #1b5e20;
-    color: white;
-}
-
-
-.navbar {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 18px 0;
-}
-
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-
-.menu {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-
-    transition: 0.3s;
-}
-
-
-.menu a:hover {
-    color: #a5d6a7;
-}
-
-
-/* Hero */
-
-.hero {
-    min-height: 500px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(27, 94, 32, 0.75),
-            rgba(27, 94, 32, 0.75)
-        ),
-        url("https://images.unsplash.com/photo-1464226184884-fa280b87c399")
-        center/cover;
-}
-
-
-.hero-text {
-    color: white;
-    max-width: 700px;
-    padding: 30px;
-}
-
-
-.hero h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-
-.btn {
-    display: inline-block;
-
-    background-color: #8bc34a;
-    color: white;
-
-    padding: 12px 30px;
-
-    border-radius: 30px;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-
-.btn:hover {
-    background-color: #689f38;
-}
-
-
-/* Sections */
-
-section {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-
-    padding: 70px 0;
-}
-
-
-section h2 {
-    text-align: center;
-
-    color: #2e7d32;
-
-    font-size: 30px;
-
-    margin-bottom: 35px;
-}
-
-
-/* About */
-
-.about {
-    text-align: center;
-}
-
-
-.about p {
-    max-width: 800px;
-    margin: auto;
-
-    font-size: 18px;
-}
-
-
-/* Cards */
-
-.fertilizers {
-    background-color: #ffffff;
-}
-
-
-.cards {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 20px;
-}
-
-
-.card {
-    background-color: #f5f9f3;
-
-    padding: 30px 20px;
-
-    border-radius: 15px;
-
-    text-align: center;
-
-    border: 1px solid #dce8d8;
-
-    transition: 0.3s;
-}
-
-
-.card:hover {
-    transform: translateY(-8px);
-
-    box-shadow:
-        0 10px 25px
-        rgba(0, 0, 0, 0.1);
-}
-
-
-.icon {
-    font-size: 45px;
-
-    margin-bottom: 15px;
-}
-
-
-.card h3 {
-    color: #2e7d32;
-
-    margin-bottom: 12px;
-
-    font-size: 20px;
-}
-
-
-.card p {
-    font-size: 14px;
-}
-
-
-/* Table */
-
-.comparison {
-    text-align: center;
-}
-
-
-table {
-    width: 100%;
-
-    border-collapse: collapse;
-
-    background-color: white;
-
-    box-shadow:
-        0 5px 20px
-        rgba(0, 0, 0, 0.08);
-}
-
-
-th {
-    background-color: #2e7d32;
-
-    color: white;
-
-    padding: 15px;
-}
-
-
-td {
-    padding: 15px;
-
-    border-bottom: 1px solid #ddd;
-}
-
-
-tr:hover {
-    background-color: #f1f8e9;
-}
-
-
-/* Contact */
-
-.contact {
-    text-align: center;
-
-    background-color: #e8f5e9;
-
-    max-width: none;
-}
-
-
-.contact p {
-    margin: 10px;
-}
-
-
-/* Footer */
-
-footer {
-    background-color: #163b19;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 25px;
-}
-
-
-/* Mobile */
-
-@media (max-width: 800px) {
-
-    .navbar {
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-
-    .menu {
-        gap: 12px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-
-    .hero p {
-        font-size: 17px;
-    }
-
-
-    .cards {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-}
-
-
-@media (max-width: 500px) {
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-
-    table {
-        font-size: 13px;
-    }
-
-
-    th,
-    td {
-        padding: 8px;
-    }
-
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    direction: rtl;
-    background: #f1f8e9;
-    color: #333;
-}
-
-header {
-    background: #2e7d32;
+    background: linear-gradient(135deg, #1b5e20, #4caf50);
     color: white;
     text-align: center;
     padding: 35px 20px;
@@ -372,203 +24,127 @@ header {
 
 header h1 {
     font-size: 32px;
-    margin-bottom: 10px;
 }
 
 header p {
-    font-size: 17px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
+
+/* Navigation */
+
 nav {
-    background: #1b5e20;
+    background: #145214;
+    padding: 12px;
     text-align: center;
-    padding: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
+    margin: 0 10px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    display: inline-block;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #c8e6c9;
+    background: white;
+    color: #145214;
 }
+
+
+/* Container */
 
 .container {
     width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
-}
-
-.container h2 {
-    text-align: center;
-    color: #2e7d32;
-    margin-bottom: 30px;
-    font-size: 28px;
-}
-
-.card {
+    max-width: 1100px;
+    margin: 30px auto;
     background: white;
     padding: 25px;
-    margin-bottom: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-right: 5px solid #4caf50;
+    box-shadow: 0 5px 20px #0002;
+}
+
+
+/* Cards */
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px #0002;
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
 }
 
-.card h3 {
-    color: #388e3c;
-    margin-bottom: 12px;
-    font-size: 21px;
+
+.card img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.card p {
-    line-height: 2;
-    font-size: 16px;
-}
 
-form {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-}
+/* Buttons */
 
-form label {
-    display: block;
-    margin-bottom: 8px;
-    color: #2e7d32;
-    font-weight: bold;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-family: Tahoma;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-form textarea {
-    resize: vertical;
-}
-
-form input:focus,
-form textarea:focus {
-    outline: none;
-    border-color: #4caf50;
-}
-
-form button {
+button,
+.btn {
     background: #2e7d32;
     color: white;
     border: none;
-    padding: 12px 30px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: Tahoma;
+    padding: 12px 25px;
+    border-radius: 25px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
-form button:hover {
+button:hover,
+.btn:hover {
     background: #1b5e20;
 }
+
+
+/* Forms */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-family: Tahoma;
+}
+
+
+/* Footer */
 
 footer {
-    background: #1b5e20;
+    background: #145214;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
-a {
-    text-decoration: none;
+
+
+/* Logo */
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
 }
-.as{
-margin-left: 400px;
-}
-table {
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    text-align: center;
-    direction: rtl;
-    font-family: Tahoma, sans-serif;
-}
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جدول کودهای کشاورزی</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div class="container">
-        <h1>🌱 جدول انواع کود کشاورزی</h1>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>نوع کود</th>
-                    <th>عنصر اصلی</th>
-                    <th>کاربرد</th>
-                    <th>تفاوت</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>کود نیتروژنه</td>
-                    <td>نیتروژن (N)</td>
-                    <td>افزایش رشد برگ و ساقه</td>
-                    <td>مناسب برای رشد سریع قسمت‌های سبز گیاه</td>
-                </tr>
-
-                <tr>
-                    <td>کود فسفاته</td>
-                    <td>فسفر (P)</td>
-                    <td>تقویت ریشه و گل‌دهی</td>
-                    <td>بیشتر روی ریشه، گل و تشکیل بذر تأثیر دارد</td>
-                </tr>
-
-                <tr>
-                    <td>کود پتاسه</td>
-                    <td>پتاسیم (K)</td>
-                    <td>افزایش مقاومت گیاه</td>
-                    <td>به مقاومت گیاه در برابر تنش‌ها و بهبود کیفیت محصول کمک می‌کند</td>
-                </tr>
-
-                <tr>
-                    <td>کود آلی</td>
-                    <td>مواد آلی و عناصر غذایی</td>
-                    <td>بهبود خاک و تغذیه گیاه</td>
-                    <td>طبیعی‌تر و معمولاً آهسته‌رهش‌تر از کودهای شیمیایی است</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-</body>
-</html>
